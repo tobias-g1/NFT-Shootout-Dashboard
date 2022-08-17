@@ -1,0 +1,29 @@
+@import '../../../styles/utils/colors.scss';
+@import '../../../styles/utils/breakpoints.scss';
+
+.tech-partners.container {
+    text-align: center;
+    margin-bottom: 80px;
+    h2 {
+        font-family: sport;
+        color: $text-yellow;
+        font-size: 50px;
+        margin-top: 0;
+        line-height: 50px;
+        @media all and (max-width: $large) {
+            font-size: 30px;
+        }
+    }
+    .partners-list {
+        justify-content: space-around;
+        a {
+            background: $white;
+            padding: 15px 20px;
+            // border-radius: 20px;
+            @media all and (max-width: $large) {
+                margin: 10px 0;
+                width: 100%;
+            }
+        }
+    }
+}

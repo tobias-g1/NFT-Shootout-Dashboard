@@ -1,0 +1,36 @@
+@import '../../../styles/utils/colors.scss';
+@import '../../../styles/utils/breakpoints.scss';
+
+.quicklink-container {
+    background: url(../../../assets/images/pattern.jpg);
+    background-color: $black-secondary;
+    padding: 100px 0;
+    @media all and (max-width: $large) {
+        padding: 50px 0;
+    }
+    .container {
+        justify-content: space-around;
+    }
+    .quick-link {
+        background-color: black;
+        padding: 35px 13px 10px 13px;
+        // border-radius: 10px;
+        // max-width: 221px;
+        // max-height: 262px;
+        text-align: center;
+        // &:not(:last-child) {
+        //     margin-right: 30px;
+        // }
+        a {
+            display: block;
+            font-size: 16px;
+            width: 198px;
+            // font-weight: 700;
+        }   
+        @media all and (max-width: $large) {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

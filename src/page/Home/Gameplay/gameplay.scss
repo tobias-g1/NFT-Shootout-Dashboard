@@ -1,0 +1,44 @@
+@import '../../../styles/utils/colors.scss';
+@import '../../../styles/utils/breakpoints.scss';
+
+.gameplay {
+    padding: 75px 0;
+    background: url(../../../assets/images/pattern.jpg);
+    // background: $grey;
+    h2 {
+        font-family: sport;
+        font-size: 48px;
+        color: $text-yellow;
+        margin: 0 0 30px;
+        @media all and (max-width: $large) {
+            font-size: 26px;
+        }
+    a {
+        color:$text-yellow;
+    }
+    }
+    .gameplay-images {
+        justify-content: space-between;
+        margin: 0 0 50px;
+        @media all and (max-width: $large) {
+            .gameplay-left {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .gameplay-content {
+        color: $white;
+        h3{
+            font-size: 40px;
+            font-family: sport;
+            margin: 0 0 30px;
+            @media all and (max-width: $large) {
+                font-size: 30px;
+            }
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}

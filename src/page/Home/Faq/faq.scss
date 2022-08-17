@@ -1,0 +1,62 @@
+@import '../../../styles/utils/colors.scss';
+@import '../../../styles/utils/breakpoints.scss';
+.faq-container.container {
+    padding: 80px 10px 60px;
+    @media all and (max-width: $large) {
+        padding: 50px 10px;
+    }
+    h2 {
+        font-size: 50px;
+        line-height: 50px;
+        color: $other-yellow;
+        font-family: sport;
+        margin: 0 0 30px;
+        @media all and (max-width: $large) {
+            font-size: 30px;
+        }
+    }
+    .faq-section {
+        margin-bottom: 20px;
+        .faq-title {
+            font-size: 20px;
+            font-family: sport;
+            background: rgb(197,163,65);
+            background: linear-gradient(90deg, rgba(197,163,65,1) 0%, rgba(254,247,145,1) 50%, rgba(217,184,83,1) 100%);
+            // border-radius: 10px;
+            @media all and (max-width: $large) {
+                font-size: 16px;
+            }
+            .accordion__button {
+                cursor: pointer;
+                padding: 20px 30px;
+                &:before {
+                    content: "+";
+                    padding-right: 5px;
+                }
+                &[aria-disabled="true"] {
+                    &::before {
+                        content: "-";
+                    }
+                }
+            }
+        }
+        .faq-content {
+            font-size: 20px;
+            line-height: 30px;
+            color: $white;
+            padding: 40px 50px;
+            background: $grey;
+            // border-radius: 0 0 10px 10px;
+            p {
+                margin: 0;
+            }
+            p + p { 
+                margin-top: 20px;
+            }
+            @media all and (max-width: $large) {
+                padding: 20px;
+                
+            }
+        }
+    }
+}

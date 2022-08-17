@@ -1,0 +1,200 @@
+@import '../../../styles/utils/colors.scss';
+@import '../../../styles/utils/breakpoints.scss';
+
+.contact-wrapper {
+    background: url(../../../assets/images/pattern.jpg);
+    padding: 90px 0 20px;
+    @media all and (max-width: $large) {
+        padding: 30px 0 0;
+    }
+    h2{
+        font-size: 50px;
+        font-family: sport;
+        color: $text-yellow;
+        margin-top: 0;
+        line-height: 50px;
+        margin-bottom: 22px;
+        @media all and (max-width: $large) {
+            font-size: 30px;
+        }
+    }
+    .contact-details,
+    .contact-form {
+        flex-grow: 5;
+    }
+    .contact-detail {
+        color: $white;
+        position: relative;
+        padding-left: 75px;
+        margin-bottom: 25px;
+        @media all and (max-width: $large) {
+            padding-left: 65px;
+        }
+        &:before {
+            content: "";
+            height: 53px;
+            width: 53px;
+            position: absolute;
+            left: 0;
+            border-radius: 50%;
+            @media all and (max-width: $large) {
+                height: 50px;
+                width: 50px;
+            }
+        }
+        &.address {
+            background: url(../../../assets/images/address.png) no-repeat top left;
+        }
+        &.email {
+            background: url(../../../assets/images/email.png) no-repeat top left;
+        }
+        &.website {
+            background: url(../../../assets/images/website.png) no-repeat top left;
+        }
+        h4 {
+            font-family: sport;
+            font-size: 25px;
+            margin: 0;
+            font-weight: normal;
+            @media all and (max-width: $large) {
+                font-size: 20px;
+            }
+        }
+        p, a {
+            font-size: 20px;
+            line-height: 30px;
+            margin: 0;
+            @media all and (max-width: $large) {
+                font-size: 16px;
+                // max-width: 100%;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $white;
+            &:hover {
+                color: $yellow;
+            }
+        }
+    }
+    .contact-form {
+        position: relative;
+        width: 100%;
+        max-width: 570px;
+        max-height: 830px;
+        form {
+            background: url(../../../assets/images/borderimg.png) no-repeat;
+            background-size: cover;
+            padding: 15px;
+            // border-radius: 40px;
+        }
+        @media all and (max-width: $large) {
+            width: 100%;
+            max-width: 100%;
+            margin-top: 50px;
+        }
+    }
+    .fbg {
+        background: url(../../../assets/images/formbg.jpg) no-repeat;
+        background-size: cover;
+        padding: 30px;
+        // border-radius: 20px;
+        .btn-yellow {
+            width: 100%;
+            font-weight: 700;
+        }
+        h2 {
+            color: $black;
+        }
+        
+        textarea {
+            height: auto;
+            resize: vertical;
+            overflow: auto;
+        }
+    }
+    .fieldstyle {
+        color: $black;
+        font-size: 18px;
+        // border-radius: 50px;
+        background: $white;
+        border: 1px solid $yellow;
+        width: 100%;
+        height: 64px;
+        line-height: 64px;
+        padding: 0px 30px;
+        margin-bottom: 20px;
+        box-shadow: 0px 1px 4px 2px rgba(0, 0, 0, 0.14) inset;
+        font-family: "Lato", sans-serif;
+        @media all and (max-width: $large) {
+            padding: 0 15px;
+        }
+    }
+
+    .socialicons {
+        margin: 25px 0px 0px;
+        padding: 0px;
+        display: inline-block;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            li {
+                a {
+                    display: block;
+                }
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+                @media all and (max-width: $large) {
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    } 
+
+    .join-newsletter {
+        padding: 0px 0 0 0px;
+        max-width: 620px;
+        h4 {
+            font-size: 26px;
+            line-height: 36px;
+            color: $text-yellow;
+            font-weight: normal;
+            font-family: sport;
+            margin: 45px 0 30px;
+            @media all and (max-width: $large) {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        input[type="email"] {
+            width: 375px;
+            margin-right: 10px;
+            font-size: 15px;
+            height: 58px;
+            margin-bottom: 0;
+            font-family: "Lato", sans-serif;
+            border: 0;
+            @media all and (max-width: $large) {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        
+        @media all and (max-width: $large) {
+            .btn-yellow {
+                width: 100%;
+            }
+        }
+    }
+}
+

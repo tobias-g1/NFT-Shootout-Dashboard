@@ -1,0 +1,9 @@
+$large: 992px; /* Large devices (laptops/desktops, 992px and up) */
+$medium: 768px; /* Medium devices (landscape tablets, 768px and up) */
+$small: 600px; /* Small devices (portrait tablets and large phones, 600px and up) */
+$extra-small: 600px; /* Extra small devices (phones, 600px and down) */
+
+// below meathod to use media query in any scss file after import of breakpoints.scss to respective file
+// @media all and (min-width: $medium) {
+//   write your style here
+// }

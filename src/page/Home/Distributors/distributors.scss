@@ -1,0 +1,211 @@
+@import '../../../styles/utils/colors.scss';
+@import '../../../styles/utils/breakpoints.scss';
+.distributors-section {
+    background: url(../../../assets/images/pattern.jpg);
+    padding: 60px 0;
+    .distributors {
+        &:not(:last-child) {
+            margin-bottom: 80px;
+            @media all and (max-width: $large) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    h2 {
+        font-family: sport;
+        font-size: 50px;
+        color: $other-yellow;
+        text-align: center;
+        margin: 0 0 45px;
+        line-height: 60px;
+        &::before,
+        &::after {
+            content: '';
+            width: 210px;
+            display: inline-block;
+            vertical-align: middle;
+            height: 5px;
+        }
+        &::before {
+            background: url(../../../assets/images/shade-left.png) no-repeat left center;
+            padding-left: 20px;
+        }
+        &::after {
+            background: url(../../../assets/images/shade-right.png) no-repeat right center;
+            padding-right: 20px;
+        }
+        @media all and (max-width: $large) {
+            font-size: 30px;
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+.exchanges {
+    justify-content: center;
+    align-items: center;
+}
+.each-exchange {
+    max-width: 22%;
+    background: $white;
+    padding: 20px;
+    // border-radius: 20px;
+    margin: 0 15px;
+    @media all and (max-width: $large) {
+        max-width: 100%;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        min-height: 65px;
+        text-decoration: none;
+        @media all and (max-width: $large) {
+            justify-content: center;
+        }
+    }
+    img {
+        max-width: 100%;
+        @media all and (max-width: $large) {
+            height: 64px;
+        }
+    }
+}
+.audits {
+    .each-exchange {
+        max-width: 33.33%;
+        @media all and (max-width: $large) {
+            max-width: none;
+        }
+    }
+    a {
+        display: block;
+        text-align: center;
+    }
+    p {
+        color: #008000;
+        margin: 0;
+    }
+}
+.listed {
+    .each-exchange {
+        max-width: 17.5%;
+        @media all and (max-width: $large) {
+            max-width: none;
+        }
+    }
+}
+.featured {
+    img {
+        max-width: 25%;
+        max-height: 35px;
+        margin: 8px;
+        @media all and (max-width: $large) {
+            max-width: 19%;
+        }
+    }
+    h3 {
+        margin: 0 0 15px;
+        @media all and (max-width: $large) {
+            font-size: 20px;
+        }
+    }
+    .exchanges {
+        color: $black;
+        font-size: 25px;
+        line-height: 40px;
+        text-align: center;
+        margin: 0px;
+        font-weight: 700;
+        .publishers {
+            max-width: 50%;
+            width: 100%;
+            margin: 0 auto;
+            background: $white;
+            // border-radius: 20px 20px 0 0; 
+            text-align: center;
+            padding: 24px;
+            @media all and (max-width: $large) {
+                max-width: none;
+            }
+        }
+        .published {
+            max-width: 50%;
+            width: 100%;
+            margin: 0 auto;
+            background: $white;
+            // border-radius: 0 0 20px 20px;
+            text-align: center;
+            padding: 5px 0;
+            border-top: 1px solid $border-grey;
+            justify-content: center;
+            @media all and (max-width: $large) {
+                max-width: none;
+                font-size: 20px;
+            }
+            img {
+                margin-left: 25px;
+                @media all and (max-width: $large) {
+                    margin-left: 14px;
+                }
+            }
+        }
+    }
+    .view-all {
+        width: 100%;
+        text-align: center;
+        margin: 30px auto;
+        font-size: 25px;
+        color: $white;
+    }
+}
+.distributor-link {
+    text-decoration: none;
+}
+.distributor-logos_container {
+    .distributor-logos {
+        width: calc(25% - 20px);
+        margin: 10px;
+        background: $white;
+        padding: 20px;
+        // border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @media all and (max-width: $large) {
+            width: calc(100% - 20px);
+        }
+        .dis-logo {
+            height: 100px;
+            align-items: center;
+            justify-content: space-around;
+            img {
+                max-width: 100%;
+                max-height: none;
+                height: auto;
+            }
+        }
+        .vis-auth {
+            margin-top: 16px;
+            justify-content: space-between;
+            width: 100%;
+            h5 {
+                font-size: 25px;
+                color: #d46884;
+                margin: 0;
+                line-height: 1.2;
+            }
+            p {
+                margin: 0;
+                font-size: 18px;
+                color: #6f6f6f;
+                font-weight: 700;
+                line-height: 1.2;
+            }
+        }
+    }
+}

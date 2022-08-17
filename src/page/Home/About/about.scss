@@ -1,0 +1,31 @@
+@import '../../../styles/utils/colors.scss';
+@import '../../../styles/utils/breakpoints.scss';
+
+.about-section.container{
+    margin-top: 45px;
+    padding-top: 90px;
+    margin-bottom: 55px;
+    background: url('../../../assets/images/about-bg.png') no-repeat top center;
+    background-size: contain;
+    h2 {
+        font-family: sport;
+        font-size: 50px;
+        color: #fbe682;
+        margin-bottom: 10px;
+        margin-top: 0;
+        line-height: 60px;
+        @media all and (max-width: $large) {
+            font-size: 26px;
+            margin-bottom: 0;
+            line-height: 36px;
+        }
+    }
+    .abt-sec {
+        margin-bottom: 45px;
+    }
+    p {
+        font-size: 20px;
+        line-height: 30px;
+        color: $white;
+    }
+}

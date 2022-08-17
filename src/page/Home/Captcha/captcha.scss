@@ -1,0 +1,34 @@
+@import '../../../styles/utils/colors.scss';
+@import '../../../styles/utils/breakpoints.scss';
+
+.captcha {
+    justify-content: self-end;
+    margin: 20px 0;
+    img {
+        height: 30px;
+    }
+    .btnRefresh {
+        background: $grey;
+        box-shadow: none;
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: capitalize;
+        width: auto;
+        line-height: 30px;
+        // margin-bottom: 20px;
+        cursor: pointer;
+        color: $white;
+        font-weight: normal;
+        border-radius: 0px;
+        border: 0;
+        padding: 0 5px;
+    }
+    .captchaNumber {
+        background: #ff9f6b;
+        padding: 7px 5px;
+    }
+}
+.captcha-error {
+    margin: 10px 0;
+    display: none;
+}
